@@ -1,0 +1,1 @@
+import"./chunk-EQDQRRRY.js";var t=[{path:"",loadComponent:()=>import("./chunk-E5FAIJ4D.js").then(o=>o.HomePageComponent),children:[{path:"",loadComponent:()=>import("./chunk-5Z22DDNX.js").then(o=>o.GifListComponent)}]},{path:"**",redirectTo:"",pathMatch:"full"}];export{t as GifsRoutes};
