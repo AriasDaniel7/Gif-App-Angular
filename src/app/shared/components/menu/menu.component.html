@@ -1,0 +1,23 @@
+<nav class="w-11/12 mx-auto my-4">
+  <div class="flex justify-between items-center">
+    <span class="text-white text-xl font-semibold">{{ title }}</span>
+    <div class="btn-close">
+      <button mat-fab (click)="drawer.toggle()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="btn-item flex flex-col">
+    <mat-list role="list">
+      @for (tag of tags; track $index) {
+      <mat-list-item (click)="searchTag(tag)" role="listitem">
+        <button class="text-black">
+          <div class="flex">
+            <span>{{ tag | titlecase }}</span>
+          </div>
+        </button>
+      </mat-list-item>
+      }
+    </mat-list>
+  </div>
+</nav>

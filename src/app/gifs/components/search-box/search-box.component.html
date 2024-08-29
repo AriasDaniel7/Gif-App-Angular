@@ -1,0 +1,15 @@
+<div class="busqueda mt-4 mb-4">
+  <input
+    type="text"
+    class="w-full rounded-md border-2 text-dark shadow-sm"
+    placeholder="Enter your gif"
+    #txtTagInput
+    (keyup.enter)="searchTag()"
+  />
+  <button
+    class="flex-none rounded-md text-sm font-semibold text-white shadow-sm"
+    (click)="searchTag()"
+  >
+    Buscar
+  </button>
+</div>

@@ -1,0 +1,13 @@
+<div class="flex justify-center items-cente rounded-md">
+  <img
+    class="animate__animated animate__fadeIn rounded-md"
+    [src]="url"
+    [alt]="alt"
+    (load)="onLoad()"
+    [ngStyle]="{ display: hasLoaded ? '' : 'none' }"
+  />
+
+  @if(!hasLoaded) {
+  <img class="mt-3 mb-3" src="./assets/oval.svg" height="35" width="35" />
+  }
+</div>

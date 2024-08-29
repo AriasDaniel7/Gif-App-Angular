@@ -1,0 +1,14 @@
+<mat-drawer-container class="h-screen w-full" [hasBackdrop]="'true'">
+  <mat-drawer #drawer [mode]="'over'">
+    <shared-menu [title]="'Busqueda'" [drawer]="drawer"></shared-menu>
+  </mat-drawer>
+  <mat-drawer-content class="h-full w-full">
+    <nav>
+      <shared-toolbar [drawer]="drawer"></shared-toolbar>
+    </nav>
+    <main class="main">
+      <gifs-search-box></gifs-search-box>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>

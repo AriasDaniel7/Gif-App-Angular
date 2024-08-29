@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item {
+  width: 100%;
+  padding: 0.5rem;
+  @media (min-width: 600px) {
+    width: 33.3333%;
+  }
+  @media (min-width: 900px) {
+    width: 20%;
+  }
+}

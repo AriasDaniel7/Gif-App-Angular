@@ -1,0 +1,12 @@
+<mat-card class="card">
+  <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || 'No title'"
+  ></shared-lazy-image>
+
+  <mat-card-content>
+    <p class="text-center p-2 h-full w-full flex justify-center items-center">
+      {{ gif.title || "No title" }}
+    </p>
+  </mat-card-content>
+</mat-card>
